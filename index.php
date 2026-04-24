@@ -20,19 +20,12 @@ Pearl white #f8f6f0 -> general
 </head>
 <body>
 	<nav id="nav">
-		<!-- <div><button id="nav-menu">Menu</button></div>
-		<div><button id="nav-edu">Education</button></div>
-		<div><button id="nav-work">Work</button></div>
-		<div><button id="nav-travel">Travel</button></div>
+		<button id="nav-menu"><img src="./icons/menu.svg"></img></button>
+		<button id="nav-edu"><img src="./icons/education.svg"></img></button>
+		<button id="nav-work"><img src="./icons/work.svg"></img></button>
+		<button id="nav-travel"><img src="./icons/travel.svg"></img></button>
 		<div class="empty"></div>
-		<div><button id="nav-info">Info</button></div> -->
-
-		<button id="nav-menu">Menu</button>
-		<button id="nav-edu">Education</button>
-		<button id="nav-work">Work</button>
-		<button id="nav-travel">Travel</button>
-		<div class="empty"></div>
-		<button id="nav-info">Info</button>
+		<button id="nav-info"><img src="./icons/info.svg"></img></button>
 	</nav>
 	<main id="content">
 		<div id="home" class="page">
