@@ -31,17 +31,14 @@ Pearl white #f8f6f0 -> general
 		<div id="home" class="page">
 			<h1>Ready to check out a new city?</h1>
 			<h2>Ever changing text.</h2>
-			<!--
-				TODO:
-				here (inside the comment), add prompts for the ever changing text.
-				it should say something different every few seconds
-
-				1. Look for a job that suits you
-				2. Study in the city you dreamt of
-				3. ...
-				4. ...
-				...
-			-->
+			<!-- <script> 
+				"Look for a job that suits you ?"
+				"You do not find the happy life. You make it."
+				"Study in the city you dream of"
+				"An investment in knowledge pays the best interest."
+				"Nothing is impossible. The word itself says: I'm possible!" 
+			
+			</script> -->
 			<button id="goto-pick-cities" class="button">Get started</button>
 		</div>
 		<div id="pick-cities" class="page hidden">
@@ -50,20 +47,18 @@ Pearl white #f8f6f0 -> general
 			<h2>Just type in the names of the cities you want to learn more about, separated by commas.</h2>
 			<input type="text" id="search-cities" class="search-bar">
 		</div>
-		<!--
-			TODO:
-			add #pick-interests
-			add #results
-			-> as pages (.page.hidden)
-			-> only add a <h1></h1> tag
-		-->
-		<!--
-			TODO:
-			add #area-best-cities
-			add #city-best-areas
-			-> as pages (.page.hidden)
-			-> only add a <h1></h1> tag
-		-->
+		<div id="pick-interests" class="page hidden"> 
+			<h1></h1>
+		</div>
+		<div id="results" class="page hidden"> 
+			<h1></h1>
+		</div>
+		<div id="interest-best-cities" class="page hidden"> 
+			<h1></h1>
+		</div>
+		<div id="city-best-interests" class="page hidden"> 
+			<h1></h1>
+		</div>
 	</main>
 </body>
 </html>
