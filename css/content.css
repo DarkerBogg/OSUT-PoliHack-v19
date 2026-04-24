@@ -2,7 +2,65 @@
 {
 	height: 100%;
 	width: 100%;
-	background-color: blanchedalmond;
+
+	color: #f8f6f0;
+	background-color: #00000000;
+
+	z-index: 1;
+
+	padding: 8px 0px;
+	padding-left: calc(64px + 16px);
+
 	grid-row: 1 2;
 	grid-column: 2 3;
+}
+
+.page
+{
+	display: block;
+
+	height: 100%;
+}
+
+.page#home
+{
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: 1fr;
+	grid-template-rows: 12% 3% 60% 15% 15%;
+
+	align-items: center;
+	justify-items: center;
+}
+
+.page h1
+{
+	font-size: 64px;
+	text-align: center;
+}
+
+.page#home button#goto-pick-cities
+{
+	width: 256px;
+	height: 48px;
+
+	color: black;
+	background-color: #fbe7a14d;
+
+	border-radius: 8px;
+
+	text-align: center;
+	font-size: 16px;
+	
+	transition-duration: 0.5s;
+}
+
+.page#home button#goto-pick-cities:hover
+{
+	background-color: #fbe7a1;
+}
+
+.page.hidden
+{
+	display: none;
 }
