@@ -1,0 +1,29 @@
+#nav
+{
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 48px) 1fr repeat(1, 48px);
+	column-gap: 0px;
+	row-gap: 8px;
+
+	padding: 8px 8px;
+
+	height: 100%;
+	width: 100%;
+	
+	background-color: bisque;
+
+	grid-row: 1 2;
+	grid-column: 1 2;
+}
+
+#nav button
+{
+	background-color: black;
+
+	width: 48px;
+	height: 48px;
+
+	grid-column: 1 2;
+}
