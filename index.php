@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!-- 
+Golden blodne  #FBE7A1 -> cards
+Pastel indigo #8686AF -> side menu
+Pearl white #f8f6f0 -> general 
+-->
 
 <!-- <html lang="en"> -->
 <html>
