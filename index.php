@@ -62,7 +62,7 @@
 			<div class="search-bar">
 				<input type="text" id="search-cities">
 				<img src="./icons/search-2.svg" id="search-cities-icon">
-			    <button class="button next">Next</button>
+			    <button id="search-cities-next" class="button next">Next</button>
 			</div>
 			<br>
 			
@@ -77,7 +77,7 @@
 			<div class="search-bar">
 				<input type="text" id="search-interests">
 				<img src="./icons/search-2.svg" id="search-interests-icon">
-				<button class="button next">Next</button>
+				<button	class="button next">Next</button>
             </div>
 			<div class="cards-holder"></div>
 		</div>
