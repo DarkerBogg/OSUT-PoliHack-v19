@@ -25,7 +25,7 @@
 			<img src="./icons/home-2.svg"></img>
 		</button>
 
-		<div class="empty"></div>
+		<br>
 
 		<button id="nav-edu">
 			<img src="./icons/education-2.svg"></img>
@@ -37,7 +37,7 @@
 			<img src="./icons/travel-2.svg"></img>
 		</button>
 
-		<div class="empty"></div>
+		<br>
 
 		<button id="nav-info">
 			<img src="./icons/info-2.svg"></img>
@@ -48,48 +48,38 @@
 		<div id="home" class="page">
 			<h1>Ready to check out a new city?</h1>
 
-			<div class="empty"></div>
+			<br>
 			<h2 id="home-message"></h2>
 			<button id="goto-pick-cities" class="button">Get started</button>
-			<div class="empty"></div>
+			<br>
 		</div>
 
 		<div id="pick-cities" class="page hidden">
 			<h1>Pick cities you want to explore.</h1>
 
-			<div class="empty"></div>
+			<br>
 			<h2>Just enter the names of the cities you want to learn more about, one by one.</h2>
 			<div class="search-bar">
 				<input type="text" id="search-cities">
 				<img src="./icons/search-2.svg" id="search-cities-icon">
 			</div>
-			<div class="empty"></div>
-
-			<!-- TODO: add cards according to user preferences -->
-			<div class="cards-holder">
-				<div class="card"></div>
-				<div class="card"></div>
-			</div>
+			<br>
+			
+			<div class="cards-holder"></div>
 		</div>
 
 		<div id="pick-interests" class="page hidden">
 			<h1>Pick your interests.</h1>
 
-			<div class="empty"></div>
+			<br>
 			<h2>What are you looking for in a new city? Type interests like 'education', 'work', and so on, one by one.</h2>
 			<div class="search-bar">
 				<input type="text" id="search-interests">
 				<img src="./icons/search-2.svg" id="search-interests-icon">
 			</div>
-			<div class="empty"></div>
+			<br>
 
-			<!-- TODO: add cards according to user preferences -->
-			<div class="cards-holder">
-				<div class="card"></div>
-				<div class="card"></div>
-				<div class="card"></div>
-				<div class="card"></div>
-			</div>
+			<div class="cards-holder"></div>
 		</div>
 
 		<div id="results" class="page hidden">
@@ -126,5 +116,7 @@
 	<script src="./scripts/home-page.js" type="module"></script>
 	<script src="./scripts/cities-page.js" type="module"></script>
 	<script src="./scripts/interests-page.js" type="module"></script>
+	<script src="./scripts/results.js" type="module"></script>
+	<script src="./scripts/search.js" type="module"></script>
 </body>
 </html>
