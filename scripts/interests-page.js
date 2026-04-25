@@ -1,9 +1,9 @@
 import { LoadPage } from "./index.js";
 import { DeleteSearches, ParseSearches } from "./search.js";
 
-const buttonSearch = document.getElementById("search-interests-icon");
+const buttonNext = document.getElementById("search-interests-next");
 
-buttonSearch.addEventListener("click", () =>
+buttonNext.addEventListener("click", () =>
 {
 	LoadPage("results");
 
