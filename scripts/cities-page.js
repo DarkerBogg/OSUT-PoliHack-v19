@@ -1,8 +1,8 @@
 import { LoadPage } from "./index.js";
 
-const buttonSearch = document.getElementById("search-cities-icon");
+const buttonNext = document.getElementById("search-cities-next");
 
-buttonSearch.addEventListener("click", () =>
+buttonNext.addEventListener("click", () =>
 {
 	LoadPage("pick-interests");
 });
