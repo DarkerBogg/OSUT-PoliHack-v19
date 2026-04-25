@@ -50,6 +50,8 @@ html, body
 	
 	object-fit:cover;
 
+	background-color: black;
+
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -64,10 +66,7 @@ h1
 	color: #23b3be;
 }
 
-h2
-{
-	font-family: "Archivo";
-}
+
 
 button
 {
