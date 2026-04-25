@@ -110,6 +110,7 @@
 	<video id="background" autoplay muted loop>
 		<source src="./backgrounds/globe-whole.mp4" type="video/mp4">
 	</video>
+	<div id ="bg"> </div>
 
 	<script src="./scripts/index.js" type="module"></script>
 	<script src="./scripts/nav.js" type="module"></script>
