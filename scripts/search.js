@@ -9,8 +9,8 @@ export const ParseSearches = () =>
 		"interests": [],
 	};
 
-	searchCities.forEach(element => { obj[0].push(element.name); });
-	searchInterests.forEach(element => { obj[1].push(element.name); });
+	searchCities.forEach(element => { obj.cities.push(element.name); });
+	searchInterests.forEach(element => { obj.interests.push(element.name); });
 
 	return obj;
 };
