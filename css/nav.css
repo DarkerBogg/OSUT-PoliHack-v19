@@ -3,7 +3,7 @@
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(3, 48px) 1fr repeat(1, 48px);
+	grid-template-rows: 48px 1fr repeat(3, 48px) 1fr repeat(1, 48px);
 	column-gap: 0px;
 	row-gap: 16px;
 
@@ -33,7 +33,6 @@
 
 	opacity: 0.3;
 }
-
 #nav:hover
 {
 	background-color: #23b3be;
@@ -58,14 +57,13 @@
 
 	grid-column: 1 2;
 }
+#nav button:hover
+{
+	background-color: #00000022;
+}
 
 #nav button img
 {
 	width: calc(100% - 4px);
 	height: calc(100% - 4px);
-}
-
-#nav button:hover
-{
-	background-color: #00000022;
 }

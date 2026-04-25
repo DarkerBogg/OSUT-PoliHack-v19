@@ -1,3 +1,5 @@
+import { LoadPage } from "./index.js";
+
 const messages =
 [
 	"Look for a job that suits you",
@@ -23,3 +25,10 @@ const GenerateMessage = (prevMessageId) =>
 };
 
 GenerateMessage(0);
+
+const buttonGotoPickCities = document.getElementById("goto-pick-cities");
+
+buttonGotoPickCities.addEventListener("click", () =>
+{
+	LoadPage("pick-cities");
+});
