@@ -1,6 +1,9 @@
 export let searchCities = [];
 export let searchInterests = [];
 
+let cardsHolderCities = document.getElementById("pick-cities").getElementsByClassName("cards-holder").item(0);
+let cardsHolderInterests = document.getElementById("pick-interests").getElementsByClassName("cards-holder").item(0);
+
 export const ParseSearches = () =>
 {
 	let obj =
@@ -15,6 +18,13 @@ export const ParseSearches = () =>
 	return obj;
 };
 
+export const DeleteSearches = () =>
+{
+	for (let i = 0; i < searchCities.length; i++)
+		RemoveCitySearch(searchCities[i].name);
+	searchInterests.forEach(element => { RemoveInterestSearch(element.name); });
+}
+
 const AddCitySearch = (cityName) =>
 {
 	if (searchCities.indexOf(cityName) !== -1)
@@ -24,22 +34,33 @@ const AddCitySearch = (cityName) =>
 
 	let elem = document.createElement("div");
 	elem.classList.add("card");
-	document.getElementById("pick-cities").getElementsByClassName("cards-holder").item(0).appendChild(elem);
+	cardsHolderCities.appendChild(elem);
 
 	let name = document.createElement("h2");
-	elem.appendChild(name);
 	name.textContent = cityName;
+	elem.appendChild(name);
 
 	let br = document.createElement("br");
 	elem.appendChild(br);
 
 	let more = document.createElement("h2");
-	elem.appendChild(more);
 	more.textContent = "Click to learn more";
+	elem.appendChild(more);
+
+	let remove = document.createElement("button");
+	remove.classList.add("button");
+	remove.innerHTML = "<h2>Remove search</h2>";
+	remove.addEventListener("click", () =>
+	{
+		RemoveCitySearch(cityName);
+	});
+	elem.appendChild(remove);
 
 	card.obj = elem;
 
 	searchCities.push(card);
+
+	console.warn("ADDED " + cityName, searchCities);
 };
 
 const AddInterestSearch = (interestName) =>
@@ -51,7 +72,7 @@ const AddInterestSearch = (interestName) =>
 
 	let elem = document.createElement("div");
 	elem.classList.add("card");
-	document.getElementById("pick-interests").getElementsByClassName("cards-holder").item(0).appendChild(elem);
+	cardsHolderInterests.appendChild(elem);
 
 	let name = document.createElement("h2");
 	elem.appendChild(name);
@@ -60,26 +81,62 @@ const AddInterestSearch = (interestName) =>
 	let br = document.createElement("br");
 	elem.appendChild(br);
 	elem.appendChild(br);
+	elem.appendChild(br);
+
+	let remove = document.createElement("button");
+	elem.appendChild(remove);
+	remove.classList.add("button");
+	remove.innerHTML = "<h2>Remove search</h2>";
+	remove.addEventListener("click", () =>
+	{
+		RemoveInterestSearch(interestName);
+	});
 
 	card.obj = elem;
 
 	searchInterests.push(card);
+
+	console.warn("ADDED " + interestName, searchInterests);
 };
 
 const RemoveCitySearch = (cityName) =>
 {
-	const index = searchCities.indexOf(cityName);
+	let index = -1;
 
-	if (index !== -1)
-		searchCities.splice(index, 1);
+	for (let i = 0; i < searchCities.length; i++)
+		if (searchCities[i].name === cityName)
+		{
+			index = i;
+			break;
+		}
+
+	if (index === -1)
+		return;
+
+	cardsHolderCities.removeChild(searchCities[index].obj);
+	searchCities.splice(index, 1);
+
+	console.warn("REMOVED " + cityName, searchCities);
 };
 
 const RemoveInterestSearch = (interestName) =>
 {
-	const index = searchInterests.indexOf(interestName);
+	let index = -1;
 
-	if (index !== -1)
-		searchInterests.splice(index, 1);
+	for (let i = 0; i < searchInterests.length; i++)
+		if (searchInterests[i].name === interestName)
+		{
+			index = i;
+			break;
+		}
+
+	if (index === -1)
+		return;
+
+	cardsHolderInterests.removeChild(searchInterests[index].obj);
+	searchInterests.splice(index, 1);
+
+	console.warn("REMOVED " + interestName, searchInterests);
 };
 
 const inputCity = document.getElementById("search-cities");

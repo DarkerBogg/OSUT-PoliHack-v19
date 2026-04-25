@@ -70,7 +70,6 @@ const LoadBackground = (pageId) =>
 	}
 
 	source.attributes.setNamedItem(attrSrc);
-
 	background.load();
 };
 
