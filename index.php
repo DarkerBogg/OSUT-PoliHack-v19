@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<!-- 
-Golden blodne  #FBE7A1 -> cards
-Pastel indigo #8686AF -> side menu
-Pearl white #f8f6f0 -> general 
+<!--
+	COLORS:
+	Golden blodne  #fbe7a1 -> cards
+	Pearl white #f8f6f0 -> general
+	Earth blue #23b3be -> side menu, titles
 -->
 
 <!-- <html lang="en"> -->
@@ -20,25 +21,32 @@ Pearl white #f8f6f0 -> general
 </head>
 <body>
 	<nav id="nav">
-		<button id="nav-menu"><img src="./icons/menu.svg"></img></button>
-		<button id="nav-edu"><img src="./icons/education.svg"></img></button>
-		<button id="nav-work"><img src="./icons/work.svg"></img></button>
-		<button id="nav-travel"><img src="./icons/travel.svg"></img></button>
+		<button id="nav-edu">
+			<img src="./icons/education-2.svg"></img>
+		</button>
+		<button id="nav-work">
+			<img src="./icons/work-2.svg"></img>
+		</button>
+		<button id="nav-travel">
+			<img src="./icons/travel-2.svg"></img>
+		</button>
 		<div class="empty"></div>
-		<button id="nav-info"><img src="./icons/info.svg"></img></button>
+		<button id="nav-info">
+			<img src="./icons/info-2.svg"></img>
+		</button>
 	</nav>
 	<main id="content">
 		<div id="home" class="page">
 			<h1>Ready to check out a new city?</h1>
-			<h2>Ever changing text.</h2>
 			<div class="empty"></div>
 			<!--
-				"Look for a job that suits you ?"
+				"Look for a job that suits you."
 				"You do not find the happy life. You make it."
 				"Study in the city you dream of"
 				"An investment in knowledge pays the best interest."
 				"Nothing is impossible. The word itself says: I'm possible!" 
 			-->
+			<h2>Ever changing text.</h2>
 			<button id="goto-pick-cities" class="button">Get started</button>
 			<div class="empty"></div>
 		</div>
